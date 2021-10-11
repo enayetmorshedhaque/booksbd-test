@@ -25,6 +25,10 @@
             text-align: justify;
         }
 
+        .card {
+            height: 350px;
+        }
+
         .card-image {
             width: 130px;
             height: 186px;
@@ -33,17 +37,63 @@
             justify-content: center;
         }
 
-        /* .discount-percentage {
-            width: 25%;
+        .add-to-cart-secion>i {
+            padding: 6px;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+
+        .add-to-cart-secion>i:hover {
+            color: red;
+            border: 2px solid red;
+            cursor: pointer;
+        }
+
+        .card-footer {
+            border: none;
+            opacity: 0;
+        }
+
+        .card:hover .card-footer {
+            bottom: 0;
+            left: 0;
+            opacity: 1;
             position: absolute;
             right: 0;
-            overflow: hidden;
-            display: block;
-            padding: 8px 3px;
-            top: 0px;
-            font-size: 12px;
-            text-align: center;
-        } */
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+        }
+
+        .fa-heart:hover {
+            color: #DC3B45;
+        }
+
+        .fa-cart-plus:hover {
+            color: #368755;
+        }
+
+        .mb-4:last-child {
+            margin-bottom: 0 !important;
+        }
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media (max-width: 576px) {
+            .div-custom-padding {
+                padding: 1.5rem !important;
+            }
+
+            .custom-paragraph {
+                text-align: justify;
+            }
+
+            .col-sm-6 {
+                width: 50% !important;
+            }
+
+            .card-title {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 
@@ -149,8 +199,12 @@
     <section class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a class="text-decoration-none" href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a class="text-decoration-none" href="authors.html">Authors</a></li>
+                <li class="breadcrumb-item">
+                    <a class="text-decoration-none text-dark" href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="text-decoration-none text-dark" href="authors.html">Authors</a>
+                </li>
                 <li class="breadcrumb-item active" aria-current="page">Writer Name</li>
             </ol>
         </nav>
@@ -163,14 +217,14 @@
             <h3 class="fw-bold">পিনাকী ভট্টাচার্য এর বইসমূহ</h3>
             <hr>
             <div class="row">
-                <div class="col-md-3 mb-3">
+                <div class="col-md-3 mb-4">
                     <div class="card align-items-center rounded-3 shadow">
                         <div class="card-body">
                             <a class="text-decoration-none text-dark text-center" href="http://">
                                 <img src="./images/books/dhormo-o-nastikota-bishoye-bangali-communistder-vrantiporbo.jpg"
                                     class="card-img-top img-fluid card-image mx-auto"
                                     alt="Dhormo O Nastikota Bishoye Bangali Communistder Vrantiporbo">
-                                <span class="badge bg-success position-absolute top-0 p-2">20%</span>
+                                <span class="badge bg-success position-absolute end-0 top-0 p-2">20%</span>
                                 <p class="card-title mt-2 text-center">ধর্ম ও নাস্তিকতা বিষয়ে বাঙালি
                                     কমিউনিস্টদের
                                     ভ্রান্তিপর্ব</p>
@@ -181,91 +235,131 @@
                                     &nbsp; TK. 120
                                 </h6>
                             </a>
-                            <div class="d-flex justify-content-around align-items-center">
-                                <i class="fas fa-heart"></i>
-                                <button type="button" class="btn btn-outline-warning">
-                                    <i class="fas fa-cart-plus"></i> Add To Cart</button>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="row px-4">
+                                <div class="col-md-6 text-start">
+                                    <i class="fs-4 far fa-heart"></i>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <i class="fs-5 fas fa-cart-plus"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 mb-3">
+                <div class="col-md-3 mb-4">
                     <div class="card align-items-center rounded-3 shadow">
                         <div class="card-body">
                             <a class="text-decoration-none text-dark text-center" href="http://">
-                                <img src="./images/books/dhormo-o-nastikota-bishoye-bangali-communistder-vrantiporbo.jpg"
+                                <img src="./images/books/Markin-Documente-Bangladesher-Muktijuddho-71.jpg"
                                     class="card-img-top img-fluid card-image mx-auto"
-                                    alt="Dhormo O Nastikota Bishoye Bangali Communistder Vrantiporbo">
-                                <span class="badge bg-success position-absolute top-0 p-2">20%</span>
-                                <p class="card-title mt-2 text-center">ধর্ম ও নাস্তিকতা বিষয়ে বাঙালি
-                                    কমিউনিস্টদের
-                                    ভ্রান্তিপর্ব</p>
+                                    alt="Markin Documente Bangladesher Muktijuddho 71">
+                                <span class="badge bg-success position-absolute end-0 top-0 p-2">20%</span>
+                                <p class="card-title mt-2 text-center">মার্কিন ডকুমেন্টঃ বাংলাদেশের মুক্তিযুদ্ধ'৭১</p>
                                 <h6>
                                     <small class="text-decoration-line-through text-danger">
-                                        TK. 150
+                                        TK. 270
                                     </small>
-                                    &nbsp; TK. 120
+                                    &nbsp; TK. 216
                                 </h6>
                             </a>
-                            <div class="d-flex justify-content-around align-items-center">
-                                <i class="fas fa-heart"></i>
-                                <button type="button" class="btn btn-outline-warning">
-                                    <i class="fas fa-cart-plus"></i> Add To Cart</button>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="row px-4">
+                                <div class="col-md-6 text-start">
+                                    <i class="fs-4 far fa-heart"></i>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <i class="fs-5 fas fa-cart-plus"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 mb-3">
+                <div class="col-md-3 mb-4">
                     <div class="card align-items-center rounded-3 shadow">
                         <div class="card-body">
                             <a class="text-decoration-none text-dark text-center" href="http://">
-                                <img src="./images/books/dhormo-o-nastikota-bishoye-bangali-communistder-vrantiporbo.jpg"
-                                    class="card-img-top img-fluid card-image mx-auto"
-                                    alt="Dhormo O Nastikota Bishoye Bangali Communistder Vrantiporbo">
-                                <span class="badge bg-success position-absolute top-0 p-2">20%</span>
-                                <p class="card-title mt-2 text-center">ধর্ম ও নাস্তিকতা বিষয়ে বাঙালি
-                                    কমিউনিস্টদের
-                                    ভ্রান্তিপর্ব</p>
+                                <img src="./images/books/Shadhinota-uttor-Bangladesh-Jacket-cover-011.jpg"
+                                    class="card-img-top img-fluid card-image mx-auto" alt="Shadhinota Uttor Bangladesh">
+                                <span class="badge bg-success position-absolute end-0 top-0 p-2">40%</span>
+                                <p class="card-title mt-2 text-center">স্বাধীনতা-উত্তর বাংলাদেশ : প্রথম খণ্ড</p>
                                 <h6>
                                     <small class="text-decoration-line-through text-danger">
-                                        TK. 150
+                                        TK. 1000
                                     </small>
-                                    &nbsp; TK. 120
+                                    &nbsp; TK. 600
                                 </h6>
                             </a>
-                            <div class="d-flex justify-content-around align-items-center">
-                                <i class="fas fa-heart"></i>
-                                <button type="button" class="btn btn-outline-warning">
-                                    <i class="fas fa-cart-plus"></i> Add To Cart</button>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="row px-3">
+                                <div class="col-md-6 text-start">
+                                    <i class="fs-4 far fa-heart"></i>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <i class="fs-5 fas fa-cart-plus"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 mb-3">
+                <div class="col-md-3 mb-4">
                     <div class="card align-items-center rounded-3 shadow">
                         <div class="card-body">
                             <a class="text-decoration-none text-dark text-center" href="http://">
-                                <img src="./images/books/dhormo-o-nastikota-bishoye-bangali-communistder-vrantiporbo.jpg"
-                                    class="card-img-top img-fluid card-image mx-auto"
-                                    alt="Dhormo O Nastikota Bishoye Bangali Communistder Vrantiporbo">
-                                <span class="badge bg-success position-absolute top-0 p-2">20%</span>
-                                <p class="card-title mt-2 text-center">ধর্ম ও নাস্তিকতা বিষয়ে বাঙালি
-                                    কমিউনিস্টদের
-                                    ভ্রান্তিপর্ব</p>
+                                <img src="./images/books/Itihasher-Dhulokali.jpg"
+                                    class="card-img-top img-fluid card-image mx-auto" alt="Itihasher Dhulokali">
+                                <span class="badge bg-success position-absolute end-0 top-0 p-2">25%</span>
+                                <p class="card-title mt-2 text-center">ইতিহাসের ধুলোকালি</p>
                                 <h6>
                                     <small class="text-decoration-line-through text-danger">
-                                        TK. 150
+                                        TK. 270
                                     </small>
-                                    &nbsp; TK. 120
+                                    &nbsp; TK. 203
                                 </h6>
                             </a>
-                            <div class="d-flex justify-content-around align-items-center">
-                                <i class="fas fa-heart"></i>
-                                <button type="button" class="btn btn-outline-warning">
-                                    <i class="fas fa-cart-plus"></i> Add To Cart</button>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="row px-4">
+                                <div class="col-md-6 text-start add-to-wishlist">
+                                    <i class="fs-4 far fa-heart"></i>
+                                </div>
+                                <div class="col-md-6 text-end add-to-cart">
+                                    <i class="fs-5 fas fa-cart-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card align-items-center rounded-3 shadow">
+                        <div class="card-body">
+                            <a class="text-decoration-none text-dark text-center" href="http://">
+                                <img src="./images/books/muktizudhher-boyane-islam.png"
+                                    class="card-img-top img-fluid card-image mx-auto" alt="Muktizudhher Boyane Islam">
+                                <span class="badge bg-danger position-absolute end-0 top-0 p-2 fixed-price">Fixed</span>
+                                <p class="card-title mt-2 text-center">মুক্তিযুদ্ধের বয়ানে ইসলাম</p>
+                                <h6>
+                                    <small class="text-decoration-line-through text-danger">
+                                        TK. 175
+                                    </small>
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="row px-3">
+                                <div class="col-md-6 text-start">
+                                    <i class="fs-4 far fa-heart"></i>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <i class="fs-5 fas fa-cart-plus"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
