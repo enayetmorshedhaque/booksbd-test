@@ -18,11 +18,6 @@
     <style>
         .card {
             height: 100%;
-            transition: 1s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
         }
 
         .card-title {
@@ -40,6 +35,38 @@
             border: 1px solid #ccc;
             margin: 8px auto;
             display: block;
+        }
+
+        .social-login {
+            height: 50px;
+            width: 50px;
+            border: 1px solid #e6e6e6 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .google:hover {
+            background-color: #db3236;
+            transition: 0.5s;
+        }
+
+        .facebook:hover {
+            background-color: #3b5998;
+        }
+
+        .twitter:hover {
+            background-color: #00acee;
+        }
+
+        .google:hover,
+        .facebook:hover,
+        .twitter:hover i {
+            color: white;
+        }
+
+        .fab {
+            font-size: 1rem;
         }
 
         /* Small devices (landscape phones, 576px and up) */
@@ -122,213 +149,95 @@
     </header>
     <!-- Header Section Ends Here -->
 
-    <!-- Publications Section Header Starts Here -->
-    <!-- <section class="container">
-        <div class="p-5 my-4 rounded-3 shadow div-custom-padding">
-            <h3 class="display-5 fw-bold text-center">প্রকাশনী</h3>
-            <hr>
-            <div class="mx-auto text-start">
-                <p class="custom-paragraph">
-                    সাহিত্যের আঁতুড়ঘর। সাহিত্যের সঠিক মূল্যায়ন করে পাঠকের কাছে উন্মুক্ত করে দেয়ার গুরুদায়িত্ব এই
-                    প্রকাশকদের। কেবল বই প্রকাশ নয়,ভালো মানের সাহিত্য বই আকারে নিয়মিত প্রকাশ করে প্রকাশকরা সাহিত্যের ধারা
-                    সচলভাবে
-                    অব্যাহত
-                    রাখেন। পাণ্ডুলিপি, ছাপা, মুদ্রণপ্রমাদ, সব বাঁধা-ত্যাগ-তিতিক্ষা পার করে যখন একটি বাঁধাই করা বই, এক
-                    টুকরো
-                    সাহিত্য ফসল পাঠকের সাহিত্য রসের ক্ষুধা পূরণ করে তখনই প্রকাশক সার্থক। প্রকাশকদের এই সাহিত্যধারার
-                    ট্রেনের
-                    সহযাত্রী হয়ে তাই রয়েছে দুর্বার শপ । দুর্বার শপ প্রকাশকদের সুযোগ করে দিচ্ছে আধুনিক সাহিত্যের
-                    রেনেসাঁর,
-                    যেখানে সাধারণ পাঠক আর প্রকাশকের মাঝে সেতুবন্ধন হিসেবে কাজ করবে দুর্বার শপ।
-                </p>
-            </div>
-        </div>
-    </section> -->
-    <!-- Publications Section Header Ends Here -->
-
-    <!-- Search Publisher Section Starts Here -->
-    <!-- <section class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="p-2 my-2">
-                    <h4 class="text-center">জনপ্রিয় প্রকাশনীসমূহ</h4>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-6">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search Your Favorite Publisher"
-                        aria-label="Search Your Favorite Publisher" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="col-lg-3"></div>
-        </div>
-    </section> -->
-    <!-- Search Publisher Section Ends Here -->
-
-    <!-- Publisher List Section Row Starts Here -->
+    <!-- Registration Section Starts Here -->
     <section class="container">
-        <div class="row py-2 my-2">
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">শিশুতোষ</a>
-                    </div>
+        <div class="p-5 my-5 rounded-3 shadow div-custom-padding">
+            <div class="row">
+                <div class="col-md-6 p-0 m-0">
+                    <img src="./images/sign-up.jpg" alt="sign up" class="img-fluid">
                 </div>
-            </div>
+                <div class="col-md-6">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h3 class="text-center"><span class="fw-bold ">বুকস বিডিতে</span> অ্যাকাউন্ট করুন
+                            </h3>
+                            <hr>
+                            <div class="mx-auto text-start">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">পুরো নাম</label>
+                                        <input type="text" class="form-control rounded-0" id="exampleInputEmail1"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">মোবাইল</label>
+                                        <input type="text" class="form-control rounded-0" id="exampleInputEmail1"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">ইমেইল ঠিকানা</label>
+                                        <input type="email" class="form-control rounded-0" id="exampleInputEmail1"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">পাসওয়ার্ড</label>
+                                        <input type="password" class="form-control rounded-0" id="exampleInputPassword1"
+                                            required>
+                                    </div>
+                                    <div class="d-flex my-3 align-items-center">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">আমি বুকস বিডির পরিষেবার
+                                                শর্তাবলী, গোপনীয়তা নীতি এবং ফেরত নীতিতে সম্মত।</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit"
+                                            class="btn btn-primary btn-lg rounded-0">রেজিষ্টার</button>
+                                    </div>
+                                </form>
+                            </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">প্লে</a>
-                    </div>
-                </div>
-            </div>
+                            <span class="d-block my-4 text-muted text-center">অথবা সোশ্যাল মিডিয়া দিয়ে অ্যাকাউন্ট
+                                করুন</span>
+                            <hr>
+                            <div class="social-sign-up-section d-grid">
+                                <div class="d-flex justify-content-center gap-lg-3 gap-sm-3">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <div class="social-login google">
+                                            <i class="fab fa-google"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <div class="social-login facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <div class="social-login twitter">
+                                            <i class="fab fa-twitter"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">নার্সারি</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">কেজি</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">প্রথম শ্রেনি (কেজি)</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">তৃতীয়</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">চতুর্থ</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">পঞ্চম</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">ষষ্ঠ</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">সপ্তম</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">অষ্টম</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">নবম</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">নবম (ইংলিশ ভার্সন)</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">মাধ্যমিক</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="card-body-sliding">
-                            <a href="https://" class="text-decoration-none text-dark fw-bold">উচ্চ মাধ্যমিক</a>
+                            <div class="text-center mt-3">আমাদের সাথে একাউন্ট আছে? <a href="login.html"
+                                    class="text-decoration-none text-danger">সাইন ইন</a></div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">একাদশ-দ্বাদশ</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">এইচএসসি সাপ্লিমেন্ট</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="https://" class="text-decoration-none text-dark fw-bold">উচ্চ মাধ্যমিক</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Publisher List Section Row Ends Here -->
+    <!-- Registration Section Ends Here -->
 
     <!-- Footer Section Starts Here -->
     <footer class="bg-light">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 my-4">
+                    <div class="col-md-4 my-5">
                         <img src="./images/logo.png" alt="" class="img-fluid" width="230px">
                         <address class="mt-3 fw-normal">
                             ৩৭৪/১, আহমেদ নগর, মিরপুর-১, ঢাকা-১২১৬
@@ -339,7 +248,7 @@
                             <a href="tel:+8801713138707" class="text-decoration-none text-dark">+880-171-313-870-7</a>
                         </div>
                     </div>
-                    <div class="col-md-3 my-4">
+                    <div class="col-md-3 my-5">
                         <h4 class="fw-bold mb-2">আমার একাউন্ট</h4>
                         <ul class="list-unstyled">
                             <li class="mb-1">
@@ -362,7 +271,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3 my-4">
+                    <div class="col-md-2 my-5">
                         <h4 class="fw-bold mb-2">নীতিমালা</h4>
                         <ul class="list-unstyled">
                             <li class="mb-1">
@@ -386,7 +295,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-2 my-4">
+                    <div class="col-md-2 my-5">
                         <h4 class="fw-bold mb-2">তথ্য</h4>
                         <ul class="list-unstyled">
                             <li class="mb-1">
@@ -431,13 +340,13 @@
                     </div>
                 </div>
                 <div class="my-3">
-                    <img src="./images/surjopay-footer.png" alt="" class="img-fluid">
+                    <img src="./images/surjopay-footer.png" alt="ShurjoPay Payment" class="img-fluid">
                 </div>
+                <hr>
             </div>
-            <hr>
-            <div class="container">
-                <div class="my-4 fw-bold text-center">
-                    ©২০২১ বুকস বিডি। সমস্ত অধিকার সংরক্ষিত
+            <div class="container py-3">
+                <div class="fw-bold text-center">
+                    &copy; ২০২১ বুকস বিডি। সমস্ত অধিকার সংরক্ষিত
                 </div>
             </div>
         </div>
