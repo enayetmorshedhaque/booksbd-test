@@ -1,0 +1,262 @@
+/*-------------------------------------------
+|                                           |
+|             COMMON CSS STYLE              |
+|                                           |
+-------------------------------------------*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: black;
+}
+
+.card-image {
+    width: 130px;
+    height: 186px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-to-cart-secion>i {
+    padding: 6px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.add-to-cart-secion>i:hover {
+    color: red;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.card-footer {
+    border: none;
+    opacity: 0;
+}
+
+.card:hover .card-footer {
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.fa-heart:hover {
+    color: #DC3B45;
+}
+
+.fa-cart-plus:hover {
+    color: #368755;
+}
+
+/*-------------------------------------------
+|                                           |
+|         PRE ORDER CARD BODY STYLE         |
+|                                           |
+-------------------------------------------*/
+.pre-order-card-body{
+    padding: 0.5rem 1rem;
+}
+
+/*-------------------------------------------
+|                                           |
+|             COUNT DOWN STYLE              |
+|                                           |
+-------------------------------------------*/
+.countdown {
+    display: flex;
+    justify-content: center;
+}
+
+.countdown-individual{
+    padding: 10px;
+    justify-items: center;
+}
+
+.countdown-individual p{
+    margin-bottom: 0;
+}
+
+/*-------------------------------------------
+|                                           |
+|        HOMEPAGE PRODUCT IMAGE STYLE       |
+|                                           |
+-------------------------------------------*/
+.homepage-product-image-card {
+    height: 350px;
+}
+
+.homepage-product-image{
+    height: 140px;
+    width: 100px;
+
+}
+
+.homepage-product-image-card-body a{
+    display: grid;
+    justify-items: center;
+
+}
+
+.homepage-product-image-card-footer{
+    border: none;
+    opacity: 0;
+}
+
+.homepage-product-image-card-body:hover .homepage-product-image-card-footer {
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.fa-heart:hover {
+    color: #DC3B45;
+}
+
+.fa-cart-plus:hover {
+    color: #368755;
+}
+/*-------------------------------------------
+|                                           |
+|           BOOK CATEGORIES STYLE           |
+|                                           |
+-------------------------------------------*/
+.category-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+
+.category-container a{
+    font-size: 0.86rem;
+}
+
+.hover-effect{
+    background: -webkit-linear-gradient(0deg, transparent 50%, #fcb800 50%);
+    background-size: 400px 20px;
+    border: 1px solid #fcb800;
+}
+
+.hover-effect:hover{
+    background-position: 200px 0;
+}
+
+.hover-effect:hover a{
+    color: white;
+}
+
+/*-------------------------------------------
+|                                           |
+|         SOCIAL ICONS STYLE                |
+|                                           |
+-------------------------------------------*/
+
+.social-login {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #e6e6e6 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google:hover {
+    background-color: #db3236;
+    transition: 0.5s;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.instagram:hover{
+    background-color: #FA8A39;
+}
+
+.twitter:hover {
+    background-color: #00acee;
+}
+
+.whatsapp:hover{
+    background-color: #25D366;
+}
+
+.youtube:hover{
+    background-color: #FF0000;
+}
+
+.google:hover,
+.facebook:hover,
+.twitter:hover i {
+    color: white;
+}
+
+.facebook:hover i,
+.instagram:hover i,
+.whatsapp:hover i,
+.youtube:hover i{
+    color: white;
+}
+
+.fab {
+    font-size: 1rem;
+}
+
+/*-------------------------------------------
+|                                           |
+|               FOOTER STYLE                |
+|                                           |
+-------------------------------------------*/
+.footer-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-item {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.info-item-sep{
+    border-right: 1px solid #e1e1e1;
+}
+
+.info-thumb {
+    margin-right: 20px;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: #fcb800;
+    line-height: 1;
+    display: block;
+}
+
+.info-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 0;
+}
+
+.info-item p {
+    margin-bottom: 0;
+}

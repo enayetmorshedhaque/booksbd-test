@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/custom.css">
+
     <style>
         .card {
             height: 100%;
@@ -36,39 +38,6 @@
             margin: 8px auto;
             display: block;
         }
-
-        .social-login {
-            height: 50px;
-            width: 50px;
-            border: 1px solid #e6e6e6 !important;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .google:hover {
-            background-color: #db3236;
-            transition: 0.5s;
-        }
-
-        .facebook:hover {
-            background-color: #3b5998;
-        }
-
-        .twitter:hover {
-            background-color: #00acee;
-        }
-
-        .google:hover,
-        .facebook:hover,
-        .twitter:hover i {
-            color: white;
-        }
-
-        .fab {
-            font-size: 1rem;
-        }
-
 
         /* Small devices (landscape phones, 576px and up) */
         @media (max-width: 576px) {
@@ -182,13 +151,15 @@
                                         </div>
                                         <span class="ms-auto">
                                             <a href="forgot-password.html"
-                                                class="text-decoration-none text-dark">পাসওয়ার্ড
+                                                class="text-decoration-none text-danger">পাসওয়ার্ড
                                                 ভুলে
                                                 গেছেন?</a>
                                         </span>
                                     </div>
                                     <div class="d-grid">
-                                        <button type="submit" class="btn btn-primary btn-lg rounded-0">সাইন ইন</button>
+                                        <button type="submit" class="btn btn-primary btn-lg rounded-0">
+                                            <small>সাইন ইন</small>
+                                        </button>
                                     </div>
                                 </form>
                             </div>
@@ -305,27 +276,27 @@
                                     প্রশ্নাবলী</a>
                             </li>
                         </ul>
-                        <h4 class="fw-bold mb-2">সামাজিক মাধ্যম</h4>
+                        <h4 class="fw-bold mb-2">সামাজিক যোগাযোগ</h4>
                         <ul class="list-group list-group-horizontal">
-                            <li class="list-group-item">
+                            <li class="list-group-item facebook">
                                 <a href="https://facebook.com/booksbdthebookshop" class="text-decoration-none text-dark"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
-                                    <i class="fab fa-facebook-square"></i>
+                                    <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item instagram">
                                 <a href="https://www.instagram.com/booksbdshop/" class="text-decoration-none text-dark"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item whatsapp">
                                 <a href="https://wa.me/8801713138707" class="text-decoration-none text-dark"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="Whatsapp">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item youtube">
                                 <a href="https://www.youtube.com/channel/UCOP0FmcXLQJgNjSDK5AaKUA"
                                     class="text-decoration-none text-dark" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Youtube">
