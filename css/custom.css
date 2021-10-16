@@ -446,6 +446,6 @@ a:hover{
 @media screen and (max-width: 768px) {
     .custom-contact-card{
         height: 154px;
-        width: 224px;
+        width: 100%;
     }
 }
