@@ -280,10 +280,9 @@ a:hover{
 }
 
 .info-item {
-    padding: 0 15px;
+    padding: 10px 5px;
     display: flex;
     align-items: center;
-    margin-top: 30px;
 }
 
 .info-item-sep{
@@ -443,9 +442,40 @@ a:hover{
     transition: 0.8s;
 }
 
+.info-item-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 768px) {
     .custom-contact-card{
         height: 154px;
         width: 100%;
     }
+
+    .info-item-container{
+        display: grid;
+    }
+
+    .info-item{
+        display: flex;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .divider{
+        border-bottom: 1px solid rgba(102,102,102,.3);
+    }
+
+    .card figure > div {
+        width: 155.75px;
+        overflow: hidden;
+    }
+}
+
+svg:hover{
+    cursor: pointer;
+}
+
+.divider{
+    border-right: 1px solid rgba(102,102,102,.3);
 }
