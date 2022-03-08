@@ -84,7 +84,7 @@
                 <hr class="mb-3">
 
                 <form action="">
-                    <div class="row">
+                    <!-- <div class="row">
                         <h5 class="fw-bold my-4">ব্যক্তিগত তথ্যাদি</h5>
                         <div class="col-md-4">
                             <div class="mb-3">
@@ -133,49 +133,37 @@
                                     required>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="row">
                         <h5 class="fw-bold my-4">প্রকাশনী সম্পর্কিত তথ্যাদি</h5>
-                        <div class="col-md-5">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">প্রকাশনীর নাম</label>
-                                        <input type="text" class="form-control rounded-0" id="exampleInputEmail1" placeholder="Din Publications"
-                                            required>
-                                    </div>
-                                </div>
-                
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">প্রকাশনীর ঠিকানা</label>
-                                        <input type="text" class="form-control rounded-0" id="exampleInputEmail1" placeholder="Banglabazar, Dhaka"
-                                            required>
-                                    </div>
-                                </div>
-    
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">প্রকাশনীর লোগো</label>
-                                        <input class="form-control rounded-0" type="file" id="formFile">
-                                    </div>
-                                </div>
-        
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">বই সংগ্রহ করার পয়েন্ট</label>
-                                        <select class="form-select rounded-0">
-                                            <option value="1">বাংলাবাজার</option>
-                                            <option value="2">কাটাবন</option>
-                                            <option value="3">মিরপুর (হেড-অফিস)</option>
-                                          </select>
-                                    </div>
-                                </div>
+
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">প্রকাশনীর নাম</label>
+                                <input type="text" class="form-control rounded-0" id="exampleInputEmail1" placeholder="Din Publications"
+                                    required>
                             </div>
                         </div>
 
-                        <div class="col-md-7">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">প্রকাশনীর ঠিকানা</label>
+                                <input type="text" class="form-control rounded-0" id="exampleInputEmail1" placeholder="Banglabazar, Dhaka"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">প্রকাশনীর লোগো</label>
+                                <input class="form-control rounded-0" type="file" id="formFile">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="mb-3">
@@ -184,25 +172,63 @@
                                             required></textarea>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">পেমেন্ট গ্রহণ করার জন্য আপনার নম্বরটি দিন</label>
-                                        <input type="number" class="form-control rounded-0" id="exampleInputEmail1" placeholder="01712345678"
-                                            required>
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">বই সংগ্রহ করার পয়েন্ট</label>
+                                    <select class="form-select rounded-0">
+                                        <option value="1">বাংলাবাজার</option>
+                                        <option value="2">কাটাবন</option>
+                                        <option value="3">মিরপুর (হেড-অফিস)</option>
+                                      </select>
                                 </div>
+                            </div>
 
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">আপনার নম্বরটি কোন সেবার আওতাধীন?</label>
-                                        <select class="form-select rounded-0">
-                                            <option value="1">বিকাশ</option>
-                                            <option value="2">নগদ</option>
-                                            <option value="3">রকেট</option>
-                                          </select>
-                                    </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">পেমেন্ট গ্রহণ করার জন্য আপনার নম্বরটি দিন</label>
+                                    <input type="number" class="form-control rounded-0" id="exampleInputEmail1" placeholder="01712345678"
+                                        required>
                                 </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">আপনার নম্বরটি কোন সেবার আওতাধীন?</label>
+                                    <select class="form-select rounded-0">
+                                        <option value="1">বিকাশ</option>
+                                        <option value="2">নগদ</option>
+                                        <option value="3">রকেট</option>
+                                      </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">আপনার ই-মেইল</label>
+                                <input type="email" class="form-control rounded-0" id="exampleInputEmail1" placeholder="akashroy@domain.com"
+                                    required>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">আপনার পাসওয়ার্ড দিন</label>
+                                <input type="password" class="form-control rounded-0" id="exampleInputEmail1" placeholder="akashroy01712@#$*&"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">আপনার পাসওয়ার্ডটি পুনরায় দিন</label>
+                                <input type="password" class="form-control rounded-0" id="exampleInputEmail1" placeholder="akashroy01712@#$*&"
+                                    required>
                             </div>
                         </div>
                     </div>
